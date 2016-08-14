@@ -334,7 +334,7 @@ input.search-form:hover::-webkit-input-placeholder {
 }
 
 input.search-form:hover {
-  width: 180px;
+  width: 90px;
 }
 
 .navbar-brand {
