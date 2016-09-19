@@ -854,11 +854,11 @@ blockquote p {
 	margin-bottom: 0px;
 }
 #proposal h2 {
-	color: #FFF;
+	color: #ffae00;
 }
-#proposal h4 {
+#proposal h3 {
 	color: #FFF;
-	font-size: 25px;
+	font-size: 16px;
 }
 #proposal p {
 	color: #FFF;
@@ -869,6 +869,10 @@ blockquote p {
 }
 #proposal small {
 	color: #FFF;
+}
+#proposal a {
+	color: #ffae00;
+	font-weight: bold;
 }
 
 #socialmedia {
