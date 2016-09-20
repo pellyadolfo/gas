@@ -1513,14 +1513,19 @@ a.accordion-toggle  i{
 }
 
 #ourservices {
-  background: url(../images/box_contendmiddle.png) 50% 50% no-repeat;
+  background: url(../images/distributor-background.jpg) 50% 50% no-repeat;
   background-size: cover;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 #ourservices h2, 
-#ourservices h3 {
-  color: #000;
+#ourservices h3,
+#ourservices p {
+  color: #FFF;
+}
+#ourservices a {
+	color: #ffae00;
+	font-weight: bold;
 }
 
 .color-black {
