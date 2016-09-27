@@ -840,14 +840,9 @@ blockquote p {
 	margin-bottom: 0px;
 }
 #proposal {
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 100% auto;
-  position: relative;
-  background-image: url("../images/proposals-background.jpg");
-	
+	background-image: url(../images/advantages.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
 	border: 0px;
 	padding-bottom: 40px;
 	padding-top: 40px;
@@ -870,10 +865,42 @@ blockquote p {
 #proposal small {
 	color: #FFF;
 }
-#proposal a {
-	color: #ffae00;
-	font-weight: bold;
+#motivation {
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+  position: relative;
+  background-image: url("../images/proposals-background.jpg");
+	
+	border: 0px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	margin-bottom: 0px;
 }
+#motivation h2 {
+	color: #ffae00;
+}
+#motivation h3 {
+	color: #FFF;
+	font-size: 16px;
+}
+#motivation h4 {
+    color: #FFF;
+    font-size: 25px;
+}
+#motivation p {
+	color: #FFF;
+	font-size: 16px;
+}
+#motivation li {
+	color: #FFF;
+}
+#motivation small {
+	color: #FFF;
+}
+
 
 #socialmedia {
 	background-color: #006699;
@@ -1530,6 +1557,9 @@ a.accordion-toggle  i{
 
 .color-black {
 	color: #000;
+}
+.color-white {
+	color: #FFF;
 }
 
 #testimonials {
