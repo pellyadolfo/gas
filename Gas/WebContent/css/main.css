@@ -868,9 +868,11 @@ blockquote p {
 	color: #FFF;
 }
 #instructions {
-	background-image: url(../images/advantages.jpg) ;
+	background-color: #004a6f;
+	
+	/*background-image: url(../images/advantages.jpg) ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 	border: 0px;
 	padding-bottom: 40px;
 	padding-top: 40px;
@@ -892,6 +894,9 @@ blockquote p {
 }
 #instructions small {
 	color: #FFF;
+}
+#instructions a {
+	color: #ffae00;
 }
 #motivation {
 
