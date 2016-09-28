@@ -140,6 +140,8 @@ body > section {
 .center {
   text-align: center;
   padding-bottom: 0px;
+      display:block;
+    margin:auto;
 }
 .right {
   float: right;
@@ -531,7 +533,7 @@ blockquote p {
 }
 
 #main-slider .carousel .slider-img{
-  text-align: right;
+  text-align: left;
   position: absolute;
 }
 
@@ -840,7 +842,7 @@ blockquote p {
 	margin-bottom: 0px;
 }
 #proposal {
-	background-image: url(../images/advantages.jpg) ;
+    background-image: url("../images/proposals-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 	border: 0px;
@@ -863,6 +865,32 @@ blockquote p {
 	color: #FFF;
 }
 #proposal small {
+	color: #FFF;
+}
+#instructions {
+	background-image: url(../images/advantages.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+	border: 0px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	margin-bottom: 0px;
+}
+#instructions h2 {
+	color: #ffae00;
+}
+#instructions h3 {
+	color: #FFF;
+	font-size: 16px;
+}
+#instructions p {
+	color: #FFF;
+	font-size: 16px;
+}
+#instructions li {
+	color: #FFF;
+}
+#instructions small {
 	color: #FFF;
 }
 #motivation {
