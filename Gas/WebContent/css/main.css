@@ -1027,6 +1027,10 @@ blockquote p {
 }
 
 #headline {
+	/*
+	background: -webkit-linear-gradient(left, #D6D8D9, #D6D8D9, #F4F4F4, #F4F4F4, #F4F4F4, #D6D8D9,#D6D8D9);
+	background: -moz-linear-gradient(left, #D6D8D9, #D6D8D9, #F4F4F4, #F4F4F4, #F4F4F4, #D6D8D9,#D6D8D9);
+	*/
 	background: #333333;
 	padding-top: 20px;
 	padding-bottom: 20px;
