@@ -248,6 +248,61 @@
         </div><!--/.container-->
     </section><!--/#feature-->
 
+    <section id="instructions" class="parallax_section">
+        <div class="container">
+        
+            <div class="center wow fadeInDown">
+                <h2>Tus clientes de GLP están en GasClick</h2>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap instruction-button" data-image="images/Screenshot_demand_search_with_filters_phone.png">
+                            <i class="fa fa-dollar"></i>
+                            <h2>Busca tus Clientes</h2>
+                            <h3>Puedes buscar tus clientes por fecha, tipo de balon y precio. <a target="_blank" href="technology.html#boil">Leer más.</a></h3>
+                        </div>
+                        <div class="feature-wrap instruction-button" data-image="images/Screenshot_demand_listing_map_phone.png">
+                            <i class="fa fa-dollar"></i>
+                            <h2>Visualiza el Resultado</h2>
+                            <h3>Podrás distinguir los que ya has visitado de los nuevos. <a target="_blank" href="technology.html#boil">Leer más.</a></h3>
+                        </div>
+                        <div class="feature-wrap instruction-button" data-image="images/Screenshot_demand_listing_phone.png">
+                            <i class="fa fa-dollar"></i>
+                            <h2>Amplia tu Búsqueda</h2>
+                            <h3>Para que puedas ver detalles sobre la fecha y tipo de pedido. <a target="_blank" href="technology.html#boil">Leer más.</a></h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInDown image-instructions-container" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    	<img src="images/Screenshot_splash_phone.png" class="center" height="500">
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap instruction-button" data-image="images/Screenshot_visualize_phone.png">
+                            <i class="fa fa-clock-o"></i>
+                            <h2>Visualiza un Pedido</h2>
+                            <h3>Podrás ver el detalle del pedido y los datos de contacto. <a target="_blank" href="eservices.html">Leer más.</a></h3>
+                        </div>
+                        <div class="feature-wrap instruction-button" data-image="images/Screenshot_demand_top_up_phone.png">
+                            <i class="fa fa-clock-o"></i>
+                            <h2>Recarga tu Saldo</h2>
+                            <h3>Podrás comprar crédito ó beneficiarte de nuestras ofertas. <a target="_blank" href="eservices.html">Leer más.</a></h3>
+                        </div>
+                        <div class="feature-wrap instruction-button" data-image="images/Screenshot_demand_purchases_history_phone.png">
+                            <i class="fa fa-clock-o"></i>
+                            <h2>Historial de Compras</h2>
+                            <h3>Verás todas las recargas de crédito que has hecho. <a target="_blank" href="eservices.html">Leer más.</a></h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    
+                </div><!--/.services-->
+            </div><!--/.row--> 
+        
+        </div><!--/.container-->
+    </section><!--/#content-->
+
     <!-- section id="testimonials">
         <div class="container">
 
@@ -389,6 +444,24 @@
     	$('#thumbnails2').thumbnailsCarousel($('#thumbnails2'));
     	$('#thumbnails3').thumbnailsCarousel($('#thumbnails3'));
     });
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    	  $('.instruction-button').mouseover(function() {
+    	    var image_src = $(this).attr("data-image");
+    	    var img = $('.image-instructions-container img');
+    	    if (img.attr('src') != image_src) { // only do the fade if other image is selected
+    	      /*img.fadeOut('slow', function() { // fadeout the current image
+    	        img.attr('src', image_src).fadeIn(); // load and fadein new image
+    	      });*/
+    	      img.attr('src', image_src);
+    	    }
+    	  });
+    	  $('.instruction-button').mouseout(function() {
+      	    var img = $('.image-instructions-container img');
+      	    img.attr('src', 'images/Screenshot_splash_phone.png');
+      	  });
+    	});
     </script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
