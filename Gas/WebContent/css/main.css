@@ -2588,6 +2588,19 @@ textarea#message{
 /*********************
 ****blog page css*****
 **********************/
+.country-selector .form-control {
+  background-color: #000030;
+  border-width: 0px;
+  color: #FFF;
+  text-align: right;
+}
+.country-selector .caret {
+	display: none;
+}
+
+/*********************
+****blog page css*****
+**********************/
 
 .widget {
   margin-bottom: 60px;
