@@ -473,8 +473,8 @@ blockquote p {
 	-moz-transform:rotate(-45deg);
 	rotation:-45deg;
 	position:absolute;
-	top:-60px;
-	right:90px;
+	top:-40px;
+	right:160px;
 	text-align:center;
 	text-decoration:none;
 	color:#000;
