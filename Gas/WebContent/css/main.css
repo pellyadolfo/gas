@@ -224,7 +224,7 @@ body > section {
 **************************/
 
 #header .search{
-  display: inline-block;
+    margin: 0 auto; 
 }
 
 .navbar>.container .navbar-brand{
@@ -301,6 +301,19 @@ ul.topmenusul li a {
 .topmenusul2 li {
 	list-style-type: none;
     display: inline;
+}
+
+@media (max-width:768px){
+	.navbar-brand{
+		width:70vw!important;
+	}
+}
+
+.logo {
+	width: 100%;
+}
+.logo-container {
+	width: 100%;
 }
 
 
