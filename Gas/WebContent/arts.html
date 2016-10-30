@@ -16,6 +16,7 @@
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/gallery.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -33,44 +34,50 @@
     <header id="header">
 
         <div class="top-bar top-row">
-             <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-sm-0 col-xs-0">
-                    </div>
-                    <div class="col-md-3 col-sm-7 col-xs-7">
-                            <div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                           </div>
-                    </div>
-                    <div class="col-md-3 col-sm-5 col-xs-5">
-                       <div class="topmenus">
-	                    <ul class="topmenusul2">
+			<div class="row">
+				<div class="col-md-2 hidden-sm hidden-xs">
+				</div>
+				<div class="col-md-3 hidden-sm hidden-xs">
+					<div class="search">
+						<form role="form">
+							<input type="text" class="search-form" autocomplete="off" placeholder="Search">
+							<i class="fa fa-search"></i>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-3 hidden-sm hidden-xs">
+					<div class="topmenus">
+						<ul class="topmenusul2">
 							<li><a href="https://play.google.com/store/apps/details?id=com.gasclick.demand" class="btn btn-default btn-sm btn-trial">Descargar App</a></li>
 						</ul>
+					</div>
+				</div>
+				<div class="col-md-0 col-sm-0 col-xs-0">
+				</div>
+				<div class="col-md-2 col-sm-6 col-xs-6 no_padding">
+					<div class="social">
+						<ul class="social-share">
+							<li><a href="https://www.facebook.com/GasnClick/" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+							<li><a href="https://www.facebook.com/GasnClick/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.facebook.com/GasnClick/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/GasnClick/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+							<li><a href="https://www.facebook.com/GasnClick/" target="_blank"><i class="fa fa-skype"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6 col-xs-6 no_padding">
+					<div class="bfh-selectbox bfh-countries country-selector" data-language="es_ES" data-country="PE" data-available="AR,BO,BR,CL,CO,CR,CU,DO,EC,SV,GT,HN,MX,NI,PA,PY,PE,UY,VE" data-flags="true" data-blank="false">
+					</div>
+				</div>
+				<div class="hidden-lg hidden-md col-sm-12 col-xs-12 no_padding">
+					<div id="gSignInWrapper">
+						<div id="customBtn" class="customGPlusSignIn" data-app_package_name="com.gasclick.demand">
+							<span class="icon"></span>
+							<span id="name" class="buttonText">Descargar con Google</span>
 						</div>
-                    </div>
-                    <div class="col-md-0 col-sm-0 col-xs-0">
-                    </div>
-                    <div class="col-md-2 col-sm-12 col-xs-12">
-                       <div class="social">
-                            <ul class="social-share">
-                                <li><a href="https://www.facebook.com/GasnClick/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            </ul>
-                       </div>
-                    </div>
-                    <div class="col-md-2 col-sm-0 col-xs-0">
-						<div class="bfh-selectbox bfh-countries country-selector" data-language="es_ES" data-country="PE" data-available="AR,BO,BR,CL,CO,CR,CU,DO,EC,SV,GT,HN,MX,NI,PA,PY,PE,UY,VE" data-flags="true" data-blank="false">
-						</div>
-                    </div>
-                </div>
-            </div><!--/.container-->
+					</div>
+				</div>
+			</div>
         </div><!--/.top-bar-->
 
         <nav class="navbar navbar-inverse" role="banner">
@@ -281,5 +288,37 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
+	
+    <!-- app autoinstaller -->
+	<script src="https://apis.google.com/js/api:client.js"></script>
+	<script>
+		var googleUser = {};
+		var startApp = function() {
+			gapi.load('auth2', function(){
+				// Retrieve the singleton for the GoogleAuth library and set up the client.
+				auth2 = gapi.auth2.init({
+					client_id: '1066531599350-isnlrmh77agqljm17iv7p6ulbll4mcmi.apps.googleusercontent.com',
+					cookiepolicy: 'single_host_origin',
+					app_package_name: 'com.gasclick.demand',
+					// Request scopes in addition to 'profile' and 'email'
+					// scope: 'additional_scope'
+				});
+				attachSignin(document.getElementById('customBtn'));
+			});
+		};
+		
+		function attachSignin(element) {
+			console.log(element.id);
+			auth2.attachClickHandler(element, {},
+		        function(googleUser) {
+		          document.getElementById('name').innerText = "Descargando " + googleUser.getBasicProfile().getName();
+		        }, function(error) {
+		          alert(JSON.stringify(error, undefined, 2));
+		        }
+		    );
+		}
+	</script>
+	<script>startApp();</script>
+	<!-- app autoinstaller -->
 </body>
 </html>

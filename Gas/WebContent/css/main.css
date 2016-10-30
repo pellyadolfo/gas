@@ -308,7 +308,6 @@ ul.topmenusul li a {
 		width:70vw!important;
 	}
 }
-
 .logo {
 	width: 100%;
 }
@@ -359,19 +358,18 @@ input.search-form:hover {
 
 .navbar {
   border-radius: 0;
-  margin-bottom: 0;
+  margin: 0;
   background: #004a6f;
-  padding: 15px 0;
-  padding-bottom: 0;
+  padding: 0;
+  min-height: 10px;
 }
 
  .navbar-nav{
-  margin-top: 12px;
+  margin-top: 6px;
  }
 
 .navbar-nav>li{
   margin-left: 35px;
-  padding-bottom: 28px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -2598,18 +2596,71 @@ textarea#message{
   margin-top: 20px;
 }
 
-/*********************
-****blog page css*****
-**********************/
+/************************
+**** country selector ***
+*************************/
+.country-selector {
+}
+
 .country-selector .form-control {
   background-color: #000030;
   border-width: 0px;
   color: #FFF;
-  text-align: right;
+  text-align: center;
+  height: auto;
 }
 .country-selector .caret {
 	display: none;
 }
+.bfh-selectbox-option {
+	font-size: 16px;
+}
+.bfh-selectbox .bfh-selectbox-toggle {
+	padding-top: 4px !important;
+	padding-bottom: 0px !important;
+}
+.no_padding {
+	padding-left: 0px;
+	padding-right: opx;
+}
+
+/************************
+**** OTA install app ***
+*************************/
+    #customBtn {
+      display: inline-block;
+      background: white;
+      color: #444;
+      width: 100%;
+      border-radius: 5px;
+      border: thin solid #888;
+      white-space: nowrap;
+    }
+    #customBtn:hover {
+      cursor: pointer;
+    }
+    span.icon {
+      background: url('https://developers.google.com/identity/images/g-logo.png') transparent 5px 50% no-repeat;
+      background-size: 42px 42px;
+      display: block;
+      float: left;
+      vertical-align: middle;
+      width: 50px;
+      height: 42px;
+    }
+    span.buttonText {
+      display: block;
+      overflow: hidden;
+      vertical-align: middle;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      background-color: #4285F4;
+      text-align: center;
+      height: 42px;
+      line-height:42px;
+      font-size:20px;
+      color: #FFF;
+    }
 
 /*********************
 ****blog page css*****
