@@ -2610,18 +2610,32 @@ textarea#message{
   height: auto;
 }
 .country-selector .caret {
-	display: none;
+  display: none;
 }
 .bfh-selectbox-option {
-	font-size: 16px;
+  font-size: 16px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
 }
 .bfh-selectbox .bfh-selectbox-toggle {
-	padding-top: 4px !important;
+	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 }
+.bfh-selectbox .bfh-selectbox-toggle .bfh-selectbox-option {
+	height: 28px !important;
+    vertical-align: middle;
+    line-height:28px;
+}
 .no_padding {
+	padding: 0px;
+}
+.no_hpadding {
 	padding-left: 0px;
-	padding-right: opx;
+	padding-right: 0px;
+}
+.no_margin {
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 /************************

@@ -26,6 +26,24 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    
+    
+   	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '810472819091690');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=810472819091690&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- DO NOT MODIFY -->
+	<!-- End Facebook Pixel Code -->
+    
 </head><!--/head-->
 
 <body>
@@ -67,17 +85,20 @@
 						<div class="bfh-selectbox bfh-countries country-selector" data-language="es_ES" data-country="PE" data-available="AR,BO,BR,CL,CO,CR,CU,DO,EC,SV,GT,HN,MX,NI,PA,PY,PE,UY,VE" data-flags="true" data-blank="false">
 						</div>
 					</div>
-					<div class="hidden-lg hidden-md col-sm-12 col-xs-12 no_padding">
-						<div id="gSignInWrapper">
-							<div id="customBtn" class="customGPlusSignIn" data-app_package_name="com.gasclick.demand">
-								<span class="icon"></span>
-								<span id="name" class="buttonText">Descargar con Google</span>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
         </div><!--/.top-bar-->
+        
+        <div class="top-bar top-row no_padding">
+			<div class="row no_margin">
+				<div class="hidden-lg hidden-md col-sm-12 col-xs-12 no_padding">
+					<div id="customBtn" data-app_package_name="com.gasclick.demand">
+						<span class="icon"></span>
+						<span id="name" class="buttonText">Descargar con Google</span>
+					</div>
+				</div>
+			</div>
+		</div>
 
         <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
