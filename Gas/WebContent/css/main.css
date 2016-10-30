@@ -18,7 +18,7 @@ body:after{
   height: 25px;
   background: #EE8E4A;
   top: 7px;
-  left: -20px;
+  right: -20px;
   text-align: center;
   font-size: 13px;
   font-family: sans-serif;
@@ -26,9 +26,9 @@ body:after{
   font-weight: bold;
   color: #fff;
   line-height: 27px;
-  -ms-transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg);
-  transform:rotate(-45deg);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
 }
 
 h1,
