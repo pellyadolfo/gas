@@ -2646,7 +2646,6 @@ textarea#message{
       background: white;
       color: #444;
       width: 100%;
-      border-radius: 5px;
       border: thin solid #888;
       white-space: nowrap;
     }
@@ -2656,6 +2655,7 @@ textarea#message{
     span.icon {
       background: url('https://developers.google.com/identity/images/g-logo.png') transparent 5px 50% no-repeat;
       background-size: 42px 42px;
+      background-position-x: 0px;
       display: block;
       float: left;
       vertical-align: middle;
