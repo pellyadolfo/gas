@@ -107,9 +107,9 @@
         <div class="top-bar top-row no_padding">
 			<div class="row no_margin">
 				<div class="hidden-lg hidden-md col-sm-12 col-xs-12 no_padding">
-					<div id="customBtn" class="google-button" data-app_package_name="com.gasclick.demand">
+					<div id="customBtn1" class="google-button" data-app_package_name="com.gasclick.demand">
 						<span class="icon"></span>
-						<span id="name" class="buttonText">Descargar con Google</span>
+						<span id="name1" class="buttonText">Descargar con Google</span>
 					</div>
 				</div>
 			</div>
@@ -283,9 +283,9 @@
 		<div class="row no_margin">
 			<div class="features">
 				<div class="hidden-lg hidden-md col-sm-12 col-xs-12 no_padding">
-					<div id="customBtn" data-app_package_name="com.gasclick.demand">
+					<div id="customBtn2" data-app_package_name="com.gasclick.demand">
 						<span class="icon"></span>
-						<span id="name" class="buttonText">Descargar con Google</span>
+						<span id="name2" class="buttonText">Descargar con Google</span>
 					</div>
 				</div>
 			</div>
@@ -649,9 +649,9 @@
 		<div class="row no_margin">
 			<div class="features">
 				<div class="hidden-lg hidden-md col-sm-12 col-xs-12 no_padding">
-					<div id="customBtn" class="google-button" data-app_package_name="com.gasclick.demand">
+					<div id="customBtn3" class="google-button" data-app_package_name="com.gasclick.demand">
 						<span class="icon"></span>
-						<span id="name" class="buttonText">Descargar con Google</span>
+						<span id="name3" class="buttonText">Descargar con Google</span>
 					</div>
 				</div>
 			</div>
@@ -789,7 +789,9 @@
 					// Request scopes in addition to 'profile' and 'email'
 					// scope: 'additional_scope'
 				});
-				attachSignin(document.getElementById('customBtn'));
+				attachSignin(document.getElementById('customBtn1'));
+				attachSignin(document.getElementById('customBtn2'));
+				attachSignin(document.getElementById('customBtn3'));
 			});
 		};
 		
@@ -797,7 +799,9 @@
 			console.log(element.id);
 			auth2.attachClickHandler(element, {},
 		        function(googleUser) {
-		          document.getElementById('name').innerText = "Descargando " + googleUser.getBasicProfile().getName();
+		          document.getElementById('name1').innerText = "Descargando " + googleUser.getBasicProfile().getName();
+		          document.getElementById('name2').innerText = "Descargando " + googleUser.getBasicProfile().getName();
+		          document.getElementById('name3').innerText = "Descargando " + googleUser.getBasicProfile().getName();
 		        }, function(error) {
 		          alert(JSON.stringify(error, undefined, 2));
 		        }
