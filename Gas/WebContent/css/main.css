@@ -2664,7 +2664,6 @@ textarea#message{
     }
     span.buttonText {
       display: block;
-      overflow: hidden;
       vertical-align: middle;
       font-weight: bold;
       font-family: 'Roboto', sans-serif;
