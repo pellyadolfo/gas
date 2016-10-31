@@ -526,14 +526,6 @@ blockquote p {
   padding: 0;
 }
 
-#main-slider .carousel .carousel-content {
-  margin-top: 150px;
-}
-
-#main-slider .carousel .slide-margin{
-  margin-top: 140px;
-}
-
 #main-slider .carousel .btn-slide, .btn-slide {
   padding: 8px 20px;
   background: #ffae00;
@@ -705,6 +697,39 @@ blockquote p {
 .margin-top {
 	margin-top: 30px;
 	display: inline-block;
+}
+
+#main-slider .carousel .carousel-content {
+  margin-top: 150px;
+}
+
+#main-slider .carousel .slide-margin{
+  margin-top: 140px;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+}
+/* Small Devices, Tablets */
+@media (max-width:768px) {
+	#main-slider .carousel .item {
+		height: 200px;
+	}
+	#main-slider .carousel .carousel-content {
+  		margin-top: 15px;
+	}
+	#main-slider .carousel .slide-margin{
+		margin-top: 14px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
 }
 
 
