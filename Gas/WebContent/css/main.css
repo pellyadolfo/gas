@@ -869,7 +869,7 @@ blockquote p {
 }
 
 #buttons {
-	background-image: url(http://i306.photobucket.com/albums/nn261/mundoasonica/fuego.gif) ;
+	background-image: url("../images/texture.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
 	border: 0px;
